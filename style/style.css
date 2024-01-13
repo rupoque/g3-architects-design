@@ -118,7 +118,7 @@ main {
 
 /* facts section */
 
-.facts-card-container{
+.facts-card-container {
     display: flex;
     justify-content: space-around;
 }
@@ -130,13 +130,13 @@ main {
     padding: 30px;
 }
 
-.facts-card-container .card-title{
+.facts-card-container .card-title {
     font-weight: 600;
     font-size: 1.25rem;
     margin-top: 5px;
 }
 
-.facts-card-container .card-stats{
+.facts-card-container .card-stats {
     font-size: 2.8rem;
     color: #424242;
     margin-top: 10px;
@@ -146,7 +146,7 @@ main {
 
 
 /* sponsors styles */
-.sponsors-image-container{
+.sponsors-image-container {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -154,11 +154,58 @@ main {
     gap: 40px;
 }
 
-..sponsors-image-container{
+..sponsors-image-container {
     width: 165px;
 }
-.sponsors{
+
+.sponsors {
     text-align: center;
+}
+
+/* feature section styles */
+
+.features {
+    display: flex;
+    margin-top: 130px;
+    gap: 100px;
+}
+
+.features .section-title {
+    border-left: 5px solid #FF900E;
+    padding-left: 20px;
+}
+
+.ten-years-badge {
+    border-radius: 8px;
+    background: #FF900E;
+    width: 342px;
+    color: #fff;
+    padding: 40px;
+    text-align: center;
+    position: relative;
+    bottom: 100px;
+}
+
+.ten-years-badge h2{
+    font-size: 4rem;
+    margin: 0;
+}
+
+.ten-years-badge p{
+    font-size: 1.5rem;
+}
+
+.feature-content .card {
+    padding: 30px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    background: #FFF;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
+}
+
+.feature-img img{
+    height: 80%;
+    margin-left: 140px;
 }
 
 /* responsive layout for smaller device */
@@ -169,20 +216,33 @@ main {
     }
 
     nav,
-    .teams-container, .facts-card-container, .sponsors-image-container {
+    .teams-container,
+    .facts-card-container,
+    .sponsors-image-container, .features {
         flex-direction: column;
+    }
+
+    .feature-img img{
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .ten-years-badge{
+        position: relative;
+        max-width: 300px;
     }
 
     .teams-image-container {
         grid-template-columns: 1fr;
     }
 
-    .teams-content, .facts-card-container{
+    .teams-content,
+    .facts-card-container {
         padding-left: 20px;
         padding-right: 20px;
     }
 
-    .facts-card-container{
+    .facts-card-container {
         gap: 20px;
     }
 }
@@ -190,8 +250,10 @@ main {
 /* responsive layout for smaller device */
 @media screen and (min-width: 576px) and (max-width: 960px) {
 
-    div,
-    .teams-container, .sponsors-image-container {
+    div, 
+    .features,
+    .teams-container,
+    .sponsors-image-container {
         flex-direction: column;
     }
 }
