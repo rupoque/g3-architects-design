@@ -21,7 +21,7 @@
     margin: 32px auto;
 }
 
-.banner-description {
+.text-gray {
     font-size: 1rem;
     font-weight: 400;
     color: #727272;
@@ -55,9 +55,9 @@ nav li a {
     color: #424242;
 }
 
-.nav-title {
-    font-size: 2rem;
-    font-weight: 600;
+.section-title {
+    font-size: 2.8rem;
+    font-weight: 700;
     color: #131313;
 }
 
@@ -74,65 +74,97 @@ nav li a {
     color: #131313;
 }
 
-.banner img{
+.banner img {
     width: 100%;
 }
 
 
 /* main section */
-main{
+main {
     max-width: 1440px;
     margin: 50px auto;
 }
 
 /* teams styles */
-.teams-container{
+.teams-container {
     display: flex;
     align-items: center;
 }
 
-.teams-image-container{
+.teams-image-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 1.5rem;
 }
 
-.teams-content{
+.teams-content {
     padding-right: 70px;
     padding-left: 70px;
 }
 
-.teams-title{
+.teams-title {
     font-size: 2.8rem;
 }
-.teams-title .quick-list{
+
+.teams-title .quick-list {
     color: #727272;
     font-weight: 500;
 }
 
-.teams-title .features{
+.teams-title .features {
     color: #FF900E;
     font-weight: 700;
+}
+
+/* facts section */
+
+.facts-card-container{
+    display: flex;
+    justify-content: space-around;
+}
+
+.facts-card-container .card {
+    border-radius: 8px;
+    border: 1px solid #FF900E;
+    text-align: center;
+    padding: 30px;
+}
+
+.facts-card-container .card-title{
+    font-weight: 600;
+    font-size: 1.25rem;
+    margin-top: 5px;
+}
+
+.facts-card-container .card-stats{
+    font-size: 2.8rem;
+    color: #424242;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 /* responsive layout for smaller device */
 
 @media screen and (max-width: 576px) {
-    header{
+    header {
         padding: 20px;
     }
-    nav, .teams-container{
+
+    nav,
+    .teams-container {
         flex-direction: column;
     }
 
-    .teams-image-container{
+    .teams-image-container {
         grid-template-columns: 1fr;
     }
 }
 
 /* responsive layout for smaller device */
 @media screen and (min-width: 576px) and (max-width: 960px) {
-    div, .teams-container{
+
+    div,
+    .teams-container {
         flex-direction: column;
     }
 }
